@@ -185,7 +185,7 @@ border-radius: 20px;
    #comienzaya button{
     font-size: 5vw;
    }
-   @media (min-width: 720px){
+   @media (min-width: 1024px){
     header{
         position: fixed;
         width: 100%;
