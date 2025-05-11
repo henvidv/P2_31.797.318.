@@ -33,7 +33,7 @@ app.listen(3000,function(){
     console.log("Servidor creado correctamente https://localhost:3000");
 });
 
-const db = require('../config/database');
+const db = require('./database');
 const { name } = require("ejs");
 
 // Mostrar formulario (CREATE/UPDATE)
@@ -122,7 +122,7 @@ app.get('/usuarios/:id', (req, res) => {
 });
 
 app.post('/usuarios', (req, res) => {
-    const { nombre, Apellido, mail, password } = req.body;
+    const { nombre, Apellido, mail, password} = req.body;
     db.run('INSERT INTO name (Id,name, Apellido, mail, password) VALUES (?, ?)', [Id,name, Apellido, mail, password], function(err) {
         if (err) {
             return res.status(500).json({ error: err.message });
@@ -216,7 +216,7 @@ app.get('/usuarios/:id', (req, res) => {
 });
 
 app.post('/usuarios', (req, res) => {
-    const { nombre, edad } = req.body;
+    const { Id,num_tar,ven_mes,ven_anio,cod_seg,Moneda,Monto } = req.body;
     db.run('INSERT INTO num_tar (Id,num_tar,ven_mes,ven_anio,cod_seg,Moneda,Monto) VALUES (?, ?)', [Id,num_tar,ven_mes,ven_anio,cod_seg,Moneda,Monto], function(err) {
         if (err) {
             return res.status(500).json({ error: err.message });

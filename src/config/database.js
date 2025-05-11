@@ -6,7 +6,7 @@ const app = express();
 const db = new sqlite3.Database('.C:\Users\Henvi\OneDrive\Documentos\GitHub\P2_31.797.318');
 
 app.use(express.json()); // Para manejar datos JSON en las solicitudes
-const pagos=require('../config/index.js')
+const pagos=require('./src/config/index.js')
 
 router.get('./formulario',pagos.showform);
 
@@ -24,7 +24,7 @@ router.get('/eliminar/:id', pagos.deleteItem);
 
 module.exports = router;
 
-const contacts=require('../config/index.js')
+const contacts=require('./src/config/index.js')
 
 router.get('./formulario',contacts.showform);
 
