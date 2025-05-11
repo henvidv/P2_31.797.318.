@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ruperto-Pago</title>
+        <link rel="stylesheet" href="indexpago.css">
+    </head>
+    <body>
+        <section class="formulario">
+            <h4>Formulario de Pago</h4>
+            <form action="/my-handling-form-page" method="post" from="express">
+               
+                    <label for="name">Nombre:</label>
+                    <input class="controls" type="text" id="name" name="user_name"  placeholder="ingrese su Nombre"/>
+                 
+                        <label for="name">Apellido:</label>
+                        <input class="controls" type="text" id="name" name="user_Ape"  placeholder="ingrese su Apellido"/>
+                      
+                    <label for="mail">Correo electrónico:</label>
+                    <input class="controls"c type="email" id="mail" name="user_mail" placeholder="Ingrese su Correo"/>
+                 
+                    <label for="password">Numero de la Tarjeta</label>
+                    <input class="controls" type="text" id="num_tarjeta" name="user_num_tar" placeholder="Ingrese el Numero de su tarjeta">
+
+                    <label for="vencimiento">vencimiento de la tarjeta</label>
+                    <input class="controls" type="text" id="ven_mes" name="user_ven_mes" placeholder="Ingrese el Mes de vencimiento">
+                    <input class="controls" type="text" id="ven_año" name="user_ven_año" placeholder="Ingrese el anio de vencimiento">
+                    <label for="codigoseg">Codigo de Seguridad</label>
+                    <input class="controls" type="text" id="code" name="user_code_tar" placeholder="CVC/CVV">
+                    <label for="moneda">Moneda local</label>
+                    <input class="controls" type="text" id="moneda" name="user_moneda" placeholder="$">
+                    <label for="Monto">Monto</label>
+                    <input class="controls" type="text" id="monto" name="user_monto" placeholder="Monto">
+                <p>Estoy de a cuerdo con <a href="#">Terminos y Condiciones</a></p>
+               <button class="boton" type="submit"><a href="index.html">Pagar</a></button>
+              </form>
+            </section>
+            <footer>
+                <div class="container">
+                   <p>&copy; JJKpodcast 2025</p> 
+                </div>
+            </footer>
+    </body>
+</html>
