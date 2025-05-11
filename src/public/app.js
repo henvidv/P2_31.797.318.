@@ -2,7 +2,7 @@ import express from 'express';
 import { normalize } from 'path';
 
 const app =express();
-const PORT = normalize (process.env.PORT || '3000');
+const PORT = normalizePort(process.env.PORT || '3000');
 
 
 //Middleware para archivos estaticos
