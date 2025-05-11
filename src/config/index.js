@@ -2,6 +2,7 @@
 const express = require("express")
 const bodyparser =require("body-parser")
 const parth= require("path")
+const port = process.env.PORT || 3000
 
 //objetos para llamar metodos de express
 const app = express();
