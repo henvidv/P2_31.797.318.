@@ -1,9 +1,14 @@
 <!DOCTYPE html>
 <html>
     <head>
+         <script src="https://www.google.com/recaptcha/api.js"></script>
         <title>Ruperto-Pago</title>
         <link rel="stylesheet" href="indexpago.css">
         <link hreft="database.js">
+        <script>
+   function onSubmit(token) {
+     document.getElementById("demo-form").submit();
+   }
     </head>
     <body>
         <section class="formulario">
@@ -31,6 +36,9 @@
                     <input class="controls" type="text" id="moneda" name="user_moneda" placeholder="$">
                     <label for="Monto">Monto</label>
                     <input class="controls" type="text" id="monto" name="user_monto" placeholder="Monto">
+                     data-sitekey="reCAPTCHA_site_key" 
+        data-callback='onSubmit' 
+        data-action='submit'>Submit</button>
                 <p>Estoy de a cuerdo con <a href="#">Terminos y Condiciones</a></p>
                <button class="boton" type="submit"><a href="index.html">Pagar</a></button>
               </form>
